@@ -11,9 +11,12 @@
 
 \newcommand{\cdelim}{\;\textbar\;}
 \newcommand{\newrole}[4]{
-    {\normalfont\bfseries #1\hfill#3}
+    {\normalfont\textbf{#1}\hfill#3}
     \newline
     \textit{#2}\hfill\textit{#4}
+}
+\newcommand{\shortrole}[3]{
+    {\normalfont\textbf{#1} --- \textit{#2}\hfill#3}
 }
 
 \newenvironment{bulletpoints}{\begin{itemize}\setlength\itemsep{-0.3em}}{\end{itemize}}
@@ -70,20 +73,20 @@
 
 \section*{Projects}
 
-\newrole{Spinich}{AI-powered optimized job search by cold emails}{Montreal, Quebec}{January 2024}
+\shortrole{Spinich}{AI-powered optimized job search by cold emails}{January 2024}
 \begin{bulletpoints}
     \item Development of the backend and the REST API of a Web app automating the sending of personalized cold emails
     \item Constant monitoring of the user's email inbox and AI analysis of the replies received for maximum efficiency
     \item Podium place and 3 prizes at BrebeufHx. Approached by a team of startup founders to discuss the innovative idea 
 \end{bulletpoints}
 
-\newrole{SingularIO}{Winning submission for McGill Physics Hackathon 2023}{Montreal, Quebec}{November 2023}
+\shortrole{SingularIO}{Winning submission for McGill Physics Hackathon 2023}{November 2023}
 \begin{bulletpoints}
     \item Development of an interactive, physically accurate n-body simulation with a visualization of space-time distortion
     \item Chosen out of 140 participants to win First Place prize and People’s Choice award. Built with Pygame and NumPy
 \end{bulletpoints}
 
-\newrole{NESRev}{Cycle-accurate NES emulator / Rendering engine}{Montreal, Quebec}{August 2021 --- March 2022}
+\shortrole{NESRev}{Cycle-accurate NES emulator / Rendering engine}{August 2021 --- March 2022}
 \begin{bulletpoints}
     \item Solo development of a Nintendo emulator achieving industry-level cycle accuracy. Features step-by-step execution, debugging tools, ROM file creation from assembly source code and correct graphics and audio pipeline.
     \item Built in plain C using a custom pixel rendering engine in OpenGL
@@ -93,7 +96,7 @@
 \section*{Leadership experience}
 \newrole{FLOSS (Open-Source) Club}{Lead Organizer, Co-researcher}{Montreal, Quebec}{September 2023 --- Present}
 \begin{bulletpoints}
-    \item Co-researcher in a statistical study on the usability of Debian. Currently writing a scientific paper and expected to give a talk at a worldwide open-source conference. Created data analysis software to speed up the research
+    \item Co-researcher in a statistical study on the usability of Debian, resulting in giving a talk at a worldwide open-source conference. Created data analysis software to automate 63 statistical tests
     \item Organized a hardware inventory marathon, leveraging skills in command-line scripting, troubleshooting and Linux
     \item Hosted a technical workshop for 20+ participants on networking-related use cases for Raspberry Pi
     \item Organized a day-long educational unconference-style event with a libre/open-source theme
