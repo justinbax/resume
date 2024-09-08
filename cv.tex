@@ -6,7 +6,7 @@
 \usepackage{titlesec}
 \usepackage[T1]{fontenc}
 
-\geometry{a4paper, margin=0.5in}
+\geometry{letterpaper, margin=0.5in}
 \urlstyle{same}
 
 \newcommand{\cdelim}{\;\textbar\;}
@@ -38,23 +38,16 @@
 \section*{Education}
 
 \newrole{University of Waterloo}{Bachelor of Software Engineering}{Waterloo, Ontario}{September 2024 --- May 2029}
-\begin{bulletpoints}
-    \item {\bfseries Academics}: Admitted to a highly competitive program with the President's Scholarship of Distinction
-\end{bulletpoints}
-
-\newrole{Vanier College}{Diploma of College Studies, Computer Science \& Mathematics}{Montreal, Quebec}{September 2023 --- May 2024}
-\begin{bulletpoints}
-    \item {\bfseries Academics}: 97\% academic average; entrance scholarship for excellent academic performance; Dean's Honour Roll
-\end{bulletpoints}
+% \begin{bulletpoints}
+%     \item {\bfseries Academics}: Admitted to a highly competitive program with the President's Scholarship of Distinction
+% \end{bulletpoints}
 
 
-\section*{Technical skills}
+\section*{Skills}
 
 {\bfseries Programming Languages}: C, C++, Python, Java, TypeScript, HTML/CSS, 6502 Assembly
 \newline
-{\bfseries Frameworks}: Node.js, Next.js, Svelte
-\newline
-{\bfseries Tech/Tools}: MongoDB, SQL, Git, REST API, Google Cloud API, Linux, Command line, OpenGL, Flask, NumPy
+{\bfseries Tech/Tools}: Next.js, MongoDB, SQL, AWS, GitHub Actions, Pinecone, CI/CD, Flask, NumPy, Linux, OpenGL
 
 
 \section*{Professional experience}
@@ -67,10 +60,11 @@
 
 \newrole{Tail'ed}{Software engineer intern}{Montreal, Quebec}{June 2024 --- Present}
 \begin{bulletpoints}
+    \item Built and deployed a candidate ranking AI using vector databases, leading to costs 30\% lower than the previous iteration
+    \item Initiated the automation of the CI/CD workflow (auto-build, check \& deploy) with GitHub Actions and AWS CLI tools
     \item Singlehandedly developed and deployed a web scraping API to AWS to integrate Devpost data in the application
-    \item Automated the CI/CD workflow across the codebase with GitHub Actions and the AWS Serverless deployment CLI
-    \item Optimized the leaderboard system to reduce the amount of database fetches required by more than 50\%
-    \item Gathered the student developer community with full Devpost and GitHub profile integration using Next.js
+    \item Took the initiative to add automatic unit tests, improving the test coverage from 0\% to 75\% on an internal API
+    \item Optimized the leaderboard system to reduce the amount of database fetches required by $\sim$50\%
 \end{bulletpoints}
 
 
