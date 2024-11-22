@@ -18,6 +18,9 @@
 \newcommand{\shortrole}[3]{
     {\normalfont\textbf{#1} --- \textit{#2}\hfill#3\vspace*{-4pt}}
 }
+\newcommand{\shortlinkrole}[5]{
+    {\normalfont\textbf{#1} --- \textit{#2} --- \href{#3}{#4}\hfill#5\vspace*{-4pt}}
+}
 
 \newenvironment{bulletpoints}{\begin{itemize}\setlength\itemsep{-0.3em}}{\end{itemize}}
 
@@ -40,7 +43,7 @@
 
 \section*{Education}
 
-\newrole{University of Waterloo}{Bachelor of Software Engineering}{Waterloo, Ontario}{September 2024 --- May 2029}
+\newrole{University of Waterloo}{Bachelor of Software Engineering (expected)}{Waterloo, Ontario}{September 2024 --- May 2029}
 % \begin{bulletpoints}
 %     \item {\bfseries Academics}: Admitted to a highly competitive program with the President's Scholarship of Distinction
 % \end{bulletpoints}
@@ -50,7 +53,7 @@
 
 {\bfseries Programming Languages}: TypeScript, Python, Java, C, C++, HTML/CSS, 6502 Assembly
 \newline
-{\bfseries Tech/Tools}: Next.js, React, SQL, MongoDB, CI/CD, Google Cloud API, AWS, GitHub Actions, Flask, Linux
+{\bfseries Tech/Tools}: React, Next.js, SQL, MongoDB, CI/CD, Docker, AWS, GitHub Actions, Web protocols (TCP/UDP, HTTP)
 
 
 \section*{Professional experience}
@@ -61,7 +64,7 @@
     \item Selected out of 2000 students to receive a governmental grant for college-level research
 \end{bulletpoints}
 
-\newrole{Tail'ed}{Full-stack developer intern}{Montreal, Quebec}{June 2024 --- Present}
+\newrole{Tail'ed}{Full-stack developer intern}{Montreal, Quebec}{June 2024 --- September 2024}
 \begin{bulletpoints}
     \item Built and deployed a candidate ranking AI using vector databases, leading to costs 30\% lower than the previous iteration
     \item Took the initiative to add automatic unit tests, improving the test coverage from 0\% to 84\% on an internal API
@@ -86,7 +89,7 @@
     \item Chosen out of 140 participants to win First Place prize and People’s Choice award. Built with Pygame and NumPy
 \end{bulletpoints}
 
-\shortrole{NESRev}{Cycle-accurate NES emulator \& Rendering engine}{August 2021 --- March 2022}
+\shortlinkrole{NESRev}{Cycle-accurate NES emulator \& Rendering engine}{https://github.com/justinbax/nesrev}{justinbax/nesrev}{August 2021 --- March 2022}
 \begin{bulletpoints}
     \item Solo development of a Nintendo emulator achieving industry-level cycle accuracy. Features step-by-step execution, debugging tools, ROM file creation from assembly source code and correct graphics and audio pipeline.
     \item Built in plain C using a custom pixel rendering engine in OpenGL
