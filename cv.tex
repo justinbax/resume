@@ -18,6 +18,9 @@
 \newcommand{\shortrole}[3]{
     {\normalfont\textbf{#1} --- \textit{#2}\hfill#3\vspace*{-4pt}}
 }
+\newcommand{\shortlinkrole}[5]{
+    {\normalfont\textbf{#1} --- \textit{#2} --- \href{#3}{#4}\hfill#5\vspace*{-4pt}}
+}
 
 \newenvironment{bulletpoints}{\begin{itemize}\setlength\itemsep{-0.3em}}{\end{itemize}}
 
@@ -40,7 +43,7 @@
 
 \section*{Education}
 
-\newrole{University of Waterloo}{Bachelor of Software Engineering}{Waterloo, Ontario}{September 2024 --- May 2029}
+\newrole{University of Waterloo}{Bachelor of Software Engineering (expected)}{Waterloo, Ontario}{September 2024 --- May 2029}
 % \begin{bulletpoints}
 %     \item {\bfseries Academics}: Admitted to a highly competitive program with the President's Scholarship of Distinction
 % \end{bulletpoints}
@@ -48,20 +51,20 @@
 
 \section*{Skills}
 
-{\bfseries Programming Languages}: C, C++, Python, Java, TypeScript, HTML/CSS, 6502 Assembly
+{\bfseries Programming Languages}: Python, Java, TypeScript, C, C++, HTML/CSS, 6502 Assembly
 \newline
-{\bfseries Tech/Tools}: Next.js, MongoDB, SQL, AWS, GitHub Actions, Pinecone, CI/CD, Flask, NumPy, Linux, OpenGL
+{\bfseries Tech/Tools}: Next.js, MongoDB, SQL, AWS, Linux, FreeRTOS, GitHub Actions, CI/CD
 
 
 \section*{Professional experience}
 
 \newrole{Julie Plante Computer Science Laboratory}{AI research intern}{Waterloo, Ontario}{September 2024 --- May 2025}
 \begin{bulletpoints}
-    \item Expected to complete a 32-week AI/LLM research internship during the 2024-2025 academic year
-    \item Selected out of all Science students in Vanier to receive a grant for college-level research from the FRQNT
+    \item Expected to complete a 32-week AI/ML research internship during the 2024-2025 academic year
+    \item Selected out of 2000 students to receive a governmental grant for college-level research
 \end{bulletpoints}
 
-\newrole{Tail'ed}{Software developer intern}{Montreal, Quebec}{June 2024 --- Present}
+\newrole{Tail'ed}{Software developer intern}{Montreal, Quebec}{June 2024 --- September 2024}
 \begin{bulletpoints}
     \item Built and deployed a candidate ranking AI using vector databases, leading to costs 30\% lower than the previous iteration
     \item Initiated the automation of the CI/CD workflow (auto-build, check \& deploy) with GitHub Actions and AWS CLI tools
@@ -86,7 +89,7 @@
     \item Chosen out of 140 participants to win First Place prize and People’s Choice award. Built with Pygame and NumPy
 \end{bulletpoints}
 
-\shortrole{NESRev}{Cycle-accurate NES emulator \& Rendering engine}{August 2021 --- March 2022}
+\shortlinkrole{NESRev}{Cycle-accurate NES emulator \& Rendering engine}{https://github.com/justinbax/nesrev}{justinbax/nesrev}{August 2021 --- March 2022}
 \begin{bulletpoints}
     \item Solo development of a Nintendo emulator achieving industry-level cycle accuracy. Features step-by-step execution, debugging tools, ROM file creation from assembly source code and correct graphics and audio pipeline.
     \item Built in plain C using a custom pixel rendering engine in OpenGL
