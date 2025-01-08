@@ -5,6 +5,7 @@
 \usepackage[hidelinks]{hyperref}
 \usepackage{titlesec}
 \usepackage[T1]{fontenc}
+\usepackage{fontawesome}
 
 \geometry{letterpaper, margin=0.5in}
 \urlstyle{same}
@@ -19,10 +20,10 @@
     {\normalfont\textbf{#1} --- \textit{#2}\hfill#3\vspace*{-4pt}}
 }
 \newcommand{\shortlinkrole}[5]{
-    {\normalfont\textbf{#1} --- \textit{#2} --- \href{#3}{#4}\hfill#5\vspace*{-4pt}}
+    {\href{#3}{\normalfont\textbf{#1} --- \textit{#2} --- #4\:\faExternalLink}\hfill#5\vspace*{-4pt}}
 }
 
-\newenvironment{bulletpoints}{\begin{itemize}\setlength\itemsep{-0.3em}}{\end{itemize}}
+\newenvironment{bulletpoints}{\begin{itemize}\setlength\itemsep{-0.2em}}{\end{itemize}}
 
 \titleformat{\section}{\large\bfseries}{\thesection}{0em}{\vspace*{-0.3em}}[\titlerule\vspace*{-0.2em}]
 
@@ -44,14 +45,18 @@
 \section*{Education}
 
 \newrole{University of Waterloo}{Bachelor of Software Engineering (expected)}{Waterloo, Ontario}{September 2024 --- May 2029}
-% \begin{bulletpoints}
-%     \item {\bfseries Academics}: Admitted to a highly competitive program with the President's Scholarship of Distinction
-% \end{bulletpoints}
+\begin{bulletpoints}
+    \vspace*{-2pt}
+    \item {\bfseries Academics}: 4.0 GPA, 98\% academic average, President's Scholarship of Distinction
+\end{bulletpoints}
 
+\vspace*{4pt}
+
+\newrole{Vanier College}{Diploma of College Studies, Computer Science \& Mathematics}{Montreal, Quebec}{September 2023 --- May 2024}
 
 \section*{Skills}
 
-{\bfseries Programming Languages}: Python, Java, TypeScript, C, C++, HTML/CSS, 6502 Assembly
+{\bfseries Programming Languages}: Python, TypeScript, C, C++, Java, HTML/CSS, 6502 Assembly
 \newline
 {\bfseries Tech/Tools}: Next.js, MongoDB, SQL, AWS, Linux, FreeRTOS, GitHub Actions, CI/CD
 
@@ -66,27 +71,27 @@
 
 \newrole{Tail'ed}{Software developer intern}{Montreal, Quebec}{June 2024 --- September 2024}
 \begin{bulletpoints}
-    \item Built and deployed a candidate ranking AI using vector databases, leading to costs 30\% lower than the previous iteration
+    \item Built and deployed a candidate ranking AI using vector databases, leading to costs 30\% lower than previous iteration
     \item Initiated the automation of the CI/CD workflow (auto-build, check \& deploy) with GitHub Actions and AWS CLI tools
     \item Took the initiative to add automatic unit tests, improving the test coverage from 0\% to 84\% on an internal API
-    \item Singlehandedly developed and deployed a web scraping API to AWS to integrate Devpost data in the application
-    \item Optimized the leaderboard system to reduce the amount of database fetches required by $\sim$50\%
+    \item Developed and deployed a web scraping API to AWS to integrate Devpost data in the application
+    \item Optimized the leaderboard system to reduce the amount of database fetches by 60\%
 \end{bulletpoints}
 
 
 \section*{Projects}
 
-\shortrole{Spinich}{AI-powered optimized job search by cold emails}{January 2024}
+\shortlinkrole{Spinich}{AI-powered optimized job search by cold emails}{https://github.com/justinbax/brebeufhx}{justinbax/brebeufhx}{January 2024}
 \begin{bulletpoints}
     \item Development of the backend and the REST API of a Web app automating the sending of personalized cold emails
     \item Constant monitoring of the user's email inbox and AI analysis of the replies received for maximum efficiency
     \item Podium place and 3 prizes at BrebeufHx. Approached by a team of startup founders to discuss the innovative idea
 \end{bulletpoints}
 
-\shortrole{SingularIO}{Winning submission for McGill Physics Hackathon 2023}{November 2023}
+\shortlinkrole{SingularIO}{Winning submission for McGill Physics Hackathon 2023}{https://devpost.com/software/singulario}{Devpost page}{November 2023}
 \begin{bulletpoints}
     \item Development of an interactive, physically accurate n-body simulation with a visualization of space-time distortion
-    \item Chosen out of 140 participants to win First Place prize and People’s Choice award. Built with Pygame and NumPy
+    \item Chosen out of 140 participants to win First Place prize and People's Choice award. Built with Pygame and NumPy
 \end{bulletpoints}
 
 \shortlinkrole{NESRev}{Cycle-accurate NES emulator \& Rendering engine}{https://github.com/justinbax/nesrev}{justinbax/nesrev}{August 2021 --- March 2022}
@@ -99,7 +104,7 @@
 \section*{Leadership experience}
 \newrole{FLOSS (Open-Source) Club}{Lead Organizer, Co-researcher}{Montreal, Quebec}{September 2023 --- Present}
 \begin{bulletpoints}
-    \item Co-researcher in a statistical study on the usability of Debian, resulting in a talk at a worldwide open-source conference
+    \item Co-researcher in a statistical study on the usability of Debian, resulting in \href{https://debconf24.debconf.org/talks/49-debian-installer-usability-tests-take-2/}{a talk at a worldwide open-source conference}
     \item Created data analysis software to automate 63 statistical tests, leading to 9 informed suggestions to the Debian team
     \item Organized a hardware inventory marathon, leveraging skills in command-line scripting, troubleshooting and Linux
     \item Hosted a technical workshop for 20+ participants on networking-related use cases for Raspberry Pi
@@ -110,6 +115,6 @@
 \section*{Additional information}
 {\bfseries Activities}: Math tutoring, jazz ensemble leader, classical trombone competitions, high ranking in annual math contests
 \newline
-{\bfseries Interests}: Jiu-jitsu, chess, quantum physics, learning Mandarin, non-fictional prose, game theory
+{\bfseries Interests}: Jiu-jitsu, chess, quantum physics, Mandarin, non-fictional prose, game theory
 
 \end{document}
