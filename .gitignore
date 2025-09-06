@@ -5,3 +5,5 @@
 **/*.out
 **/*.synctex.gz
 **/notes.txt
+cover-letter/versions/*
+tmp/*
