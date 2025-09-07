@@ -37,10 +37,16 @@
 \pagestyle{empty}
 
 % ----- Additional Projects -----
-% \shortlinkrole{NoInsta}{Python, AWS Lambda, S3}{https://github.com/justinbax/brebeufhx}{justinbax/noinsta}
+% \shortlinkrole{NoInsta}{Python, AWS Lambda, S3}{https://github.com/justinbax/noinsta}{justinbax/noinsta}
 % \begin{bulletpoints}
 %     \item Automated the rerouting of a user's unread Instagram messages to SMS using \textbf{AWS Lambda} and \textbf{S3}
 %     \item Decreased runtime by \textbf{80\%} and costs by half by utilizing S3 to store session information
+% \end{bulletpoints}
+
+% \shortlinkrole{SingularIO}{Python, NumPy, PyGame}{https://devpost.com/software/singulario}{Devpost page}
+% \begin{bulletpoints}
+%     \item Developed a n-body and spacetime distortion simulation in an interactive, physically accurate environment
+%     \item First Place and People's Choice award out of 140 participants at McGill Physics Hackathon
 % \end{bulletpoints}
 
 \begin{document}
@@ -55,7 +61,7 @@
 
 {\bfseries Programming Languages}: C, C++, Python, TypeScript, Java, HTML/CSS, 6502 Assembly
 \newline
-{\bfseries Tech/Tools}: AWS, React, Next.js, SQL, MongoDB, Linux, Docker, GitHub Actions, CI/CD
+{\bfseries Tech/Tools}: AWS, React, Next.js, PostgreSQL, MongoDB, Linux, Docker, GitHub Actions, CI/CD
 
 
 \section*{Education}
@@ -71,15 +77,17 @@
 
 \newrole{Software Engineer Intern}{NationGraph}{May 2025 --- Present}{Toronto, ON}
 \begin{bulletpoints}
-    \item Built an autonomous scraping pipeline for \textbf{220,000} unique websites using AI agents to extract procurement information daily. Created an automatic maintenance system to re-create and fix faulty scrapers
+    \item Built an autonomous scraping pipeline for \textbf{880,000} unique websites, resulting in \textbf{3.29TB/day} of scraped public sector procurement data using AI agents and Python
+    \item Created an automatic maintenance system to fix fauly agentic scrapers, \textbf{doubling} the amount of client-facing data using \textbf{PostgreSQL triggers} and defensive programming
     \item Improved the speed of a video clip search from \textbf{150s to 16s} by using vector embeddings and a term-frequency filter
-    \item Created a containerization framework for web scrapers in Python, fixing \textbf{OOM} errors from 5 sources in production
-    \item Optimized a data miner's accuracy by pairing it with a web crawler, resulting in \textbf{140,000} more bids found in 24h
+    \item Created a containerization framework for web scrapers, fixing \textbf{OOM} errors from \textbf{8} sources in production with Python
+    \item Improved a data mining system's accuracy from \textbf{40\% to 81\%} by building AI-controlled web crawling logic 
 \end{bulletpoints}
 
 \newrole{AI Research Intern}{Julie Plante Computer Science Laboratory}{September 2024 --- May 2025}{Waterloo, ON}
 \begin{bulletpoints}
     \item Built and benchmarked 9 modern implementations of priority queues used in AI algorithms using \textbf{C} and \textbf{Python}
+    \item Implemented \textbf{Test-Driven Development} methods to ensure consistent operation between all versions using \textbf{gtest}
     \item Selected out of 2000 students to receive a 5000\$ government award for college-level research
 \end{bulletpoints}
 
@@ -87,7 +95,7 @@
 \begin{bulletpoints}
     \item Built and deployed a job/candidate ranking AI to AWS, leading to \textbf{30\%} lower infrastructure costs than the previous iteration, using Pinecone \textbf{vector databases}, \textbf{Python}, and Cohere
     \item Initiated the automation of the \textbf{CI/CD} workflow (auto-build, test \& deploy) with \textbf{AWS} tools and GitHub Actions
-    \item Optimized the résumé leaderboard cache system to reduce database fetches by 60\% using \textbf{Next.js} and \textbf{TypeScript}
+    \item Optimized the résumé leaderboard \textbf{cache} system to reduce database fetches by 60\% using \textbf{Next.js} and \textbf{TypeScript}
 \end{bulletpoints}
 
 
@@ -103,18 +111,12 @@
 \begin{bulletpoints}
     \item Development of the backend and the REST API of a \textbf{Next.js} app automating the sending of personalized cold emails
     \item Constant monitoring of the user's email using Google Cloud API inbox and AI analysis of the replies received
-    \item Podium place and 3 prizes at BrebeufHx. Approached by a team of startup founders to discuss the innovative idea
-\end{bulletpoints}
-
-\shortlinkrole{SingularIO}{Python, NumPy, PyGame}{https://devpost.com/software/singulario}{Devpost page}
-\begin{bulletpoints}
-    \item Developed a n-body and spacetime distortion simulation in an interactive, physically accurate environment
-    \item Chosen out of 140 participants to win First Place prize and People's Choice award at McGill Physics Hackathon
+    \item \textbf{Podium place} and \textbf{3 prizes} at BrebeufHx. Approached by a team of startup founders to discuss the innovative idea
 \end{bulletpoints}
 
 
 \section*{Leadership Experience}
-\newrole{Co-Researcher, Lead Organizer}{FLOSS (Open-Source) Club}{September 2023 --- Present}{Montreal, Quebec}
+\newrole{Co-Researcher, Lead Organizer}{FLOSS (Open-Source) Club}{September 2023 --- June 2024}{Montreal, Quebec}
 \begin{bulletpoints}
     \item Created software to automate 63 statistical tests, leading to 9 suggestions to the Debian team, using \textbf{Python/NumPy}
     \item Co-researcher in a statistical study on Debian usability, resulting in \href{https://debconf24.debconf.org/talks/49-debian-installer-usability-tests-take-2/}{a talk at a worldwide open-source conference\;\faExternalLink}
