@@ -2,7 +2,7 @@ from PyPDF2 import PdfReader
 
 # Load the uploaded PDF file to check if the text is selectable
 
-file_path = "./ww/cv-ww.pdf"
+file_path = "cv.pdf"
 
 reader = PdfReader(file_path)
 
